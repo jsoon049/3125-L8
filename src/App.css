@@ -1,0 +1,45 @@
+html {
+  background-color: #f6f6e0;
+}
+
+html, body, #root, .appContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.customer, .cart, .faqContainer, .deliveryContainer {
+  min-height: 78vh;
+  margin: 0 10px;
+} 
+
+.btn {
+  margin-bottom: 15px;
+  padding: 5px 20px;
+  cursor: pointer;
+  background-color: #ffc6af;
+  font-weight: 500;
+  border: 1px solid black;
+  font-size: 15px;
+}
+
+h1 {
+  color: #5e81d1;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.instructions {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-weight: 700;
+  color: #5e81d1;
+  text-align: center;
+}
+
+/* @media only screen and (max-width: 768px) {
+  body {
+    font-size: 90%;
+  }
+} */

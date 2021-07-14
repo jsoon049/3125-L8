@@ -1,0 +1,30 @@
+.cartContainer {
+    text-align: center;
+}
+
+.totalPrice {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.cart-wrapper {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.cart-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-item-text {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.itemName {
+    margin-right: 20px;
+}
