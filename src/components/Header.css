@@ -20,7 +20,7 @@
 .sidenav li a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
   display: block;
   transition: 1s;
 }
@@ -86,12 +86,6 @@
   .closebtn {
     background-color: sienna;
   }
-
-  /* .sidenavUL {
-  padding: 0;
-  margin-top: 40px;
-}
-  */
 }
 
 @media only screen and (min-width: 768px) {

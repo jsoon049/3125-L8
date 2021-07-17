@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Customer } from "./components/Customer";
 import { Product } from "./components/Product";
-import { Cart } from "./components/Cart";
 import { Delivery } from "./components/Delivery";
 import { Homepage } from "./components/Homepage";
 import { Footer } from "./components/Footer";
@@ -22,9 +21,6 @@ function App() {
             </Route>
             <Route path="/3125-L8/product">
               <Product />
-            </Route>
-            <Route path="/3125-L8/cart">
-              <Cart />
             </Route>
             <Route path="/3125-L8/delivery">
               <Delivery />

@@ -1,0 +1,72 @@
+.wizardform {
+  flex-grow: 0.7;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.booking-form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 1.05em;
+}
+
+.booking-inner {
+  margin-bottom: 20px;
+  margin-right: 15px;
+  width: 100%;
+}
+
+.booking-input {
+  font-size: 1em;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.last {
+  margin-right: 0;
+}
+
+.date-time {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  min-height: 1em;
+}
+
+.calendar {
+  font-size: 1em;
+  padding: 6px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.DayPickerInput {
+  width: 100%;
+  margin-top: 1px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.stepinstructions {
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.steptitle {
+  text-align: center;
+}
+
+.required {
+  color: red;
+}
+
+@media screen and (min-width: 768px) {
+  .wizardform {
+    width: 50%;
+  }
+}
