@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Header } from "./components/Header";
-import { Customer } from "./components/Customer";
 import { Product } from "./components/Product";
 import { Delivery } from "./components/Delivery";
 import { Homepage } from "./components/Homepage";
 import { Footer } from "./components/Footer";
 import  Contact  from "./components/Contact";
+import { Customer } from "./components/Customer";
 import "./App.css";
 import { GlobalProvider } from "./components/GlobalState";
 
@@ -18,8 +18,7 @@ function App() {
           <Header />
           <Switch>
             <Route exact path="/3125-L8/">
-              <Homepage/>
-              <Customer />
+              <Customer/>
             </Route>
             <Route path="/3125-L8/product">
               <Product />
@@ -29,6 +28,9 @@ function App() {
             </Route>
             <Route path="/3125-L8/faq">
               <Contact />
+            </Route>
+            <Route path="/3125-L8/help">
+              <Homepage/>
             </Route>
           </Switch>
           <Footer />

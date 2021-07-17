@@ -1,12 +1,13 @@
 import React from "react";
 import { FaqItem } from "./FaqItem";
 import "./Homepage.css";
+import { Customer } from "./Customer";
 
 export const Homepage = () => {
   return (
     <div className="faqContainer">
-      <h1>Welcome to Flower Express</h1>
-      <p className="instructions">Click on one of the dropdown menus below to learn more about us and our services</p>
+      <h1>Help Section</h1>
+      <p className="instructions helptext">If you need help please click on one of the dropdown menus below to learn more about us and our services</p>
       <div className="accordion">
         <FaqItem
           title="Who are we?"

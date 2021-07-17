@@ -33,9 +33,13 @@ h3, p {
   padding: 1rem;
 }
 
+.helptext {
+  margin-top: 25px !important;
+}
+
 @media only screen and (min-width: 768px) {
   .accordion {
-    width: 80%;
+    width: 70%;
   }
   .active {
     font-size: 25px;

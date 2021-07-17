@@ -17,7 +17,7 @@ class WizardForm extends React.Component {
       email: "",
       phone: "",
       time: "",
-      daysOfWeek: [1,3],
+      daysOfWeek: [1, 3],
       selectedDay: "",
       cardholder: "",
       cardnumber: "",
@@ -86,7 +86,9 @@ class WizardForm extends React.Component {
             : "City can only contain letters";
         break;
       case "postalcode":
-        let validPostalCodeRegex = RegExp(/\b(?!.{0,7}[DFIOQU])[A-VXY]\d[A-Z][^-\w\d]\d[A-Z]\d\b/);
+        let validPostalCodeRegex = RegExp(
+          /\b(?!.{0,7}[DFIOQU])[A-VXY]\d[A-Z][^-\w\d]\d[A-Z]\d\b/
+        );
         if (value === "") errors.postalcode = "Field cannot be empty";
         else
           errors.postalcode = validPostalCodeRegex.test(value)
@@ -165,7 +167,6 @@ class WizardForm extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    let test = this.notEmpty();
     if (this.validateForm(this.state.errors) && this.notEmpty() === true) {
       alert(`Success! Here are your order details!: \n 
         Name: ${this.state.firstname}  ${this.state.lastname} \n 
@@ -214,7 +215,7 @@ class WizardForm extends React.Component {
     let currentStep = this.state.currentStep;
     if (currentStep !== 1) {
       return (
-        <button className="btn" type="button" onClick={this._prev}>
+        <button className="btn previous" type="button" onClick={this._prev}>
           Previous
         </button>
       );
@@ -313,9 +314,14 @@ class WizardForm extends React.Component {
               errors={this.state.errors}
             />
             <div className="btn-wrapper">
-              {this.previousButton()}
-              {this.nextButton()}
-              {this.submitButton()}
+              <button className="btn" type="reset">
+                Clear
+              </button>
+              <div>
+                {this.previousButton()}
+                {this.nextButton()}
+                {this.submitButton()}
+              </div>
             </div>
           </form>
         </React.Fragment>

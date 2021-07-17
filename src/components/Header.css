@@ -57,11 +57,7 @@
   align-items: center;
 }
 
-/* .brand, .sidenav {
-  margin-top: 10px;
-} */
-
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 829px) {
   .sidenav {
     display: inline-block;
     height: 100%;
@@ -88,7 +84,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 830px) {
   .openbtn,
   .closebtn {
     display: none;

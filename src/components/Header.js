@@ -7,18 +7,20 @@ export const Header = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="header">
-      <div className="brand-container
-      "> 
+      <div
+        className="brand-container
+      "
+      >
         <img src={logo} className="logo" alt="Site logo"></img>
         <h1 className="brand">Flower Express</h1>
       </div>
       <span
-          // style={!open ? { display: "" } : { visibility: "hidden" }}
-          onClick={() => setOpen(true)}
-          className="openbtn"
-        >
-          &#9776; Menu
-        </span>
+        // style={!open ? { display: "" } : { visibility: "hidden" }}
+        onClick={() => setOpen(true)}
+        className="openbtn"
+      >
+        &#9776; Menu
+      </span>
       <div className={open ? "sidenav active" : "sidenav"}>
         <button className="closebtn" onClick={() => setOpen(false)}>
           &times;
@@ -34,11 +36,6 @@ export const Header = () => {
               Flowers
             </Link>
           </li>
-          {/* <li>
-                <Link to="/3125-L8/cart" onClick={() => setOpen(false)}>
-                  View Order
-                </Link>
-              </li> */}
           <li>
             <Link to="/3125-L8/delivery" onClick={() => setOpen(false)}>
               View Order
@@ -47,6 +44,11 @@ export const Header = () => {
           <li>
             <Link to="/3125-L8/faq" onClick={() => setOpen(false)}>
               Contact Us
+            </Link>
+          </li>
+          <li>
+            <Link to="/3125-L8/help" onClick={() => setOpen(false)}>
+              Help
             </Link>
           </li>
         </ul>

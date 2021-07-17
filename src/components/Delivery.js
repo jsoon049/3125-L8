@@ -17,16 +17,6 @@ export const Delivery = () => {
     sorted.sort((a, b) => a.price - b.price);
   }
 
-  const handleSubmit = () => {
-    if (cart.length <= 0) {
-      alert("Order failed. Please add at least one product to your order!");
-    } else {
-      alert(
-        "Success! Please check your email for your order details and estimated delivery time"
-      );
-    }
-  };
-
   return (
     <div className="deliveryContainer">
       <h1>Online Delivery Form</h1>
