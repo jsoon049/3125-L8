@@ -7,8 +7,8 @@ html, body, #root, .appContainer {
   width: 100%;
 }
 
-.customer, .cart, .faqContainer, .deliveryContainer {
-  min-height: 78vh;
+.customer, .cart, .faqContainer, .deliveryContainer, .contact-wrapper {
+  min-height: 72vh;
   margin: 0 10px;
 } 
 
@@ -29,7 +29,7 @@ h1 {
 }
 
 .instructions {
-  width: 90%;
+  width: 85%;
   margin: auto;
   margin-bottom: 20px;
   margin-top: 10px;

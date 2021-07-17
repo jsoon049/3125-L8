@@ -6,6 +6,7 @@ import { Product } from "./components/Product";
 import { Delivery } from "./components/Delivery";
 import { Homepage } from "./components/Homepage";
 import { Footer } from "./components/Footer";
+import  Contact  from "./components/Contact";
 import "./App.css";
 import { GlobalProvider } from "./components/GlobalState";
 
@@ -18,6 +19,7 @@ function App() {
           <Switch>
             <Route exact path="/3125-L8/">
               <Homepage/>
+              <Customer />
             </Route>
             <Route path="/3125-L8/product">
               <Product />
@@ -26,7 +28,7 @@ function App() {
               <Delivery />
             </Route>
             <Route path="/3125-L8/faq">
-              <Customer />
+              <Contact />
             </Route>
           </Switch>
           <Footer />
