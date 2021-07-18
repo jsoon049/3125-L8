@@ -1,0 +1,29 @@
+.errorimg {
+    width: 450px;
+    height: 450px;
+}
+
+.errorcontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.errortitle {
+    font-size: 75px;
+}
+
+.errortext {
+    font-size: 20px;
+}
+
+.errorlink {
+    display: block;
+    font-size: 20px;
+    margin: 2px 0;
+}
+
+.errortextwrap {
+    margin: 10px 0
+    ;
+}
