@@ -1,7 +1,9 @@
 import React from "react";
 import "./Customer.css";
+import { useTranslation } from "react-i18next";
 
 export const Customer = () => {
+  const { t, i18n } = useTranslation();
   // State used to track user preferences
   const [state, setState] = React.useState({
     Orchid: JSON.parse(sessionStorage.getItem("Orchid")) || false,
@@ -26,12 +28,12 @@ export const Customer = () => {
 
   return (
     <div className="customer">
-      <h1 className="customerTitle">Welcome to Flower Express</h1>
+      <h1 className="customerTitle">{t("Title")}</h1>
       <div className="customerContainer">
-        <p className="instructions">If applicable, please one or more flower preferences below</p>
+        <p className="instructions">{t("preferencesText")}</p>
         <div className="checkbox-wrapper">
           <label>
-            Would you like to see our selection of orchids?
+            {t("Orchid")}
             <input
               className="customerInput"
               type="checkbox"
@@ -41,7 +43,7 @@ export const Customer = () => {
             />
           </label>
           <label>
-            Would you like to see our selection of hyacinths?
+            {t("Hyacinth")}
             <input
               className="customerInput"
               type="checkbox"
@@ -51,7 +53,7 @@ export const Customer = () => {
             />
           </label>
           <label>
-            Would you like to see our selection of lillies?
+            {t("Lilly")}
             <input
               className="customerInput"
               type="checkbox"
@@ -61,7 +63,7 @@ export const Customer = () => {
             />
           </label>
           <button className="btn" onClick={sendUserInfo}>
-            Update Flower Preferences
+            {t("preferencesButton")} 
           </button>
         </div>
       </div>

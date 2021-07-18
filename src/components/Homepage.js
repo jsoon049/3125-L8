@@ -1,7 +1,6 @@
 import React from "react";
 import { FaqItem } from "./FaqItem";
 import "./Homepage.css";
-import { Customer } from "./Customer";
 
 export const Homepage = () => {
   return (

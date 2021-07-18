@@ -2,9 +2,15 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "./images/logo.jpeg";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <div className="header">
       <div
@@ -28,28 +34,32 @@ export const Header = () => {
         <ul className="sidenavUL">
           <li>
             <Link to="/3125-L8/" onClick={() => setOpen(false)}>
-              Home
+              {t("Home")}
             </Link>
           </li>
           <li>
             <Link to="/3125-L8/product" onClick={() => setOpen(false)}>
-              Flowers
+              {t("Flower")}
             </Link>
           </li>
           <li>
             <Link to="/3125-L8/delivery" onClick={() => setOpen(false)}>
-              View Order
+              {t("Order")}
             </Link>
           </li>
           <li>
             <Link to="/3125-L8/faq" onClick={() => setOpen(false)}>
-              Contact Us
+              {t("Contact")}
             </Link>
           </li>
           <li>
             <Link to="/3125-L8/help" onClick={() => setOpen(false)}>
-              Help
+              {t("Help")}
             </Link>
+          </li>
+          <li>
+            <button className="btn eng" onClick={() => changeLanguage("en")}>English</button>
+            <button className="btn eng" onClick={() => changeLanguage("fre")}>Francais</button>
           </li>
         </ul>
       </div>
