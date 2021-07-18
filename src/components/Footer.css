@@ -3,14 +3,17 @@
   bottom: 0;
   right: 0;
   padding: 15px 0;
-  background-color: #88b444;
   text-align: center;
   margin-top: 20px;
 }
 
 .footer_text {
-  color: midnightblue;
+  color: white;
   font-size: 1rem;
   font-weight: 700;
   margin: 0 5px;
+}
+
+.footerf {
+  margin-bottom: 5px;
 }
